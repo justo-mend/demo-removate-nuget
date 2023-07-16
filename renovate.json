@@ -18,7 +18,7 @@
 	    },
 	    {
 	      "groupName": "major",
-	      "matchUpdatedTypes": ["major"]
+	      "matchUpdateTypes": ["major"]
 	    },
 	    {
 	      "groupName": "minor and patch",
