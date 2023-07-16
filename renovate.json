@@ -11,11 +11,19 @@
 		"Passing": "[![passing](https://developer.mend.io/api/mc/badges/compatibility/{{datasource}}/{{replace '/' '%2f' depName}}/{{{fromVersion}}}/{{{toVersion}}}?slim=true)](https://docs.renovatebot.com/merge-confidence/)",
 		"Confidence": "[![confidence](https://developer.mend.io/api/mc/badges/confidence/{{datasource}}/{{replace '/' '%2f' depName}}/{{{fromVersion}}}/{{{toVersion}}}?slim=true)](https://docs.renovatebot.com/merge-confidence/)"
 	},
-	"packageRules": [
-		{
-			"datasources": ["maven", "npm", "pypi", "packagist", "nuget"],
-			"updateTypes": ["patch", "minor", "major"],
-			"prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence"]
-		}
+	"packageRules": [{
+		"datasources": ["maven", "npm", "pypi", "packagist", "nuget"],
+		"updateTypes": ["patch", "minor", "major"],
+		"prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence"]
+	    },
+	    /* Grouping with patch, minor and major */
+	    {
+	      "groupName": "major",
+	      "matchUpdatedTypes": ["major"]
+	    },
+	    {
+	      "groupName": "minor and patch",
+	      "matchUpdateTypes": ["minor", "patch"]
+	    },
 	]
 }
