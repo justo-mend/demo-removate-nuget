@@ -15,14 +15,6 @@
 		"datasources": ["maven", "npm", "pypi", "packagist", "nuget"],
 		"updateTypes": ["patch", "minor", "major"],
 		"prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence"]
-	    },
-	    {
-	      "groupName": "major",
-	      "matchUpdateTypes": ["major"]
-	    },
-	    {
-	      "groupName": "minor and patch",
-	      "matchUpdateTypes": ["minor", "patch"]
-	    },
+	    }
 	]
 }
