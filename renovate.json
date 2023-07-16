@@ -16,7 +16,6 @@
 		"updateTypes": ["patch", "minor", "major"],
 		"prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence"]
 	    },
-	    /* Grouping with patch, minor and major */
 	    {
 	      "groupName": "major",
 	      "matchUpdatedTypes": ["major"]
