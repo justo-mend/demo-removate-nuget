@@ -14,13 +14,11 @@
 	},
 	*/
 	"packageRules": [
-/*	    
-{
+            {
 		"datasources": ["maven", "npm", "pypi", "packagist", "nuget"],
-		"updateTypes": ["patch", "minor", "major"],
+		/* "updateTypes": ["patch", "minor", "major"], */
 		"prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence"]
 	    },
-*/
 	    /* Group by update type - major, minor, patch */
 	    {
 	      "groupName": "major",
