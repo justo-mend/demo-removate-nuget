@@ -2,7 +2,7 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		"config:base",
-		"group:allNonMajor"
+		/* "group:allNonMajor" */
 	],
 	"dependencyDashboard": true,
 	/*
@@ -21,11 +21,11 @@
 	    },
 	    /* Group by update type - major, minor, patch */
 	    {
-	      "groupName": "major",
+	      "groupName": "major changes",
 	      "matchUpdateTypes": ["major"],
 	    },
 	    {
-	      "groupName": "minor and patch",
+	      "groupName": "minor and patch changes",
 	      "matchUpdateTypes": ["minor", "patch"],
 	    },
 	]
