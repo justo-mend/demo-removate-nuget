@@ -13,10 +13,22 @@
 		"Confidence": "[![confidence](https://developer.mend.io/api/mc/badges/confidence/{{datasource}}/{{replace '/' '%2f' depName}}/{{{fromVersion}}}/{{{toVersion}}}?slim=true)](https://docs.renovatebot.com/merge-confidence/)"
 	},
 	*/
-	"packageRules": [{
+	"packageRules": [
+/*	    
+{
 		"datasources": ["maven", "npm", "pypi", "packagist", "nuget"],
 		"updateTypes": ["patch", "minor", "major"],
 		"prBodyColumns": ["Package", "Change", "Age", "Adoption", "Passing", "Confidence"]
-	    }
+	    },
+*/
+	    /* Group by update type - major, minor, patch */
+	    {
+	      "groupName": "major",
+	      "matchUpdateTypes": ["major"],
+	    },
+	    {
+	      "groupName": "minor and patch",
+	      "matchUpdateTypes": ["minor", "patch"],
+	    },
 	]
 }
